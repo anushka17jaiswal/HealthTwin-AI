@@ -1,0 +1,958 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+/* ===========================
+   Global Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#07111f;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+
+/* ===========================
+   Animated Background
+=========================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-2;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #050d18,
+    #09182b,
+    #102c57,
+    #132238
+    );
+
+}
+
+
+/* Animated Glow */
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    background:#4fd1ff33;
+
+    filter:blur(120px);
+
+    top:-150px;
+
+    right:-150px;
+
+    animation:floatGlow 10s ease-in-out infinite;
+
+    z-index:-1;
+
+}
+
+
+@keyframes floatGlow{
+
+    0%{
+
+        transform:translate(0,0);
+
+    }
+
+    50%{
+
+        transform:translate(-120px,120px);
+
+    }
+
+    100%{
+
+        transform:translate(0,0);
+
+    }
+
+}
+
+
+
+/* ===========================
+   Reusable Container
+=========================== */
+
+.container{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+}
+
+
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:14px;
+
+    padding:15px 28px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    background:#4fd1ff;
+
+    color:#08111f;
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 35px #4fd1ff;
+
+}
+
+
+
+/* Secondary Button */
+
+.btn-outline{
+
+    background:transparent;
+
+    border:2px solid #4fd1ff;
+
+    color:#4fd1ff;
+
+}
+
+.btn-outline:hover{
+
+    background:#4fd1ff;
+
+    color:#07111f;
+
+}
+
+
+
+/* ===========================
+   Glass Card
+=========================== */
+
+.glass{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 10px 40px rgba(0,0,0,.35);
+
+}
+
+
+
+/* ===========================
+   Inputs
+=========================== */
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:16px;
+
+    margin-top:10px;
+
+}
+
+input::placeholder{
+
+    color:#d1d5db;
+
+}
+
+
+
+/* ===========================
+   Links
+=========================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+/* ===========================
+   Images
+=========================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 7%;
+
+    z-index:1000;
+
+    background:rgba(7,17,31,.45);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+.logo span{
+
+    color:#4fd1ff;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    color:#dbeafe;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.nav-links a:hover{
+
+    color:#4fd1ff;
+
+}
+/* Active Navigation */
+
+.active-link{
+
+    color:#4fd1ff !important;
+
+    font-weight:600;
+
+}
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+
+/* ==========================================
+   HOME
+========================================== */
+
+.home{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:120px 7%;
+
+    gap:70px;
+
+}
+
+.left{
+
+    flex:1;
+
+}
+
+.right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.title{
+
+    font-size:68px;
+
+    font-weight:700;
+
+    line-height:1.1;
+
+}
+
+.title span{
+
+    color:#4fd1ff;
+
+}
+
+.heading{
+
+    margin-top:25px;
+
+    font-size:30px;
+
+    color:#dbeafe;
+
+    line-height:1.4;
+
+}
+
+.description{
+
+    margin-top:25px;
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+    max-width:600px;
+
+}
+
+.hero-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.human-img{
+
+    width:500px;
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================================
+   FEATURE CARDS
+========================================== */
+
+.features{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.card{
+
+    padding:30px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.07);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 35px rgba(79,209,255,.25);
+
+}
+
+.card h3{
+
+    color:#4fd1ff;
+
+    margin-bottom:12px;
+
+}
+
+.card p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+}
+.create-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:120px 20px;
+
+}
+
+.create-card{
+
+    width:700px;
+
+    text-align:center;
+
+    padding:60px;
+
+}
+
+.twin-icon{
+
+    font-size:80px;
+
+    margin-bottom:20px;
+
+}
+
+.create-card h1{
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+}
+
+.create-card h3{
+
+    color:#4fd1ff;
+
+    margin-bottom:25px;
+
+}
+
+.create-card p{
+
+    line-height:1.8;
+
+    color:#d1d5db;
+
+}
+
+.create-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin:40px 0;
+
+}
+
+.create-features div{
+
+    padding:16px;
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:14px;
+
+}
+
+.create-card small{
+
+    display:block;
+
+    margin-top:20px;
+
+    color:#94a3b8;
+
+}
+/* ==========================================
+   ONBOARDING
+========================================== */
+
+.onboarding-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:120px 20px;
+
+}
+
+.onboarding-card{
+
+    width:650px;
+
+    padding:50px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:10px;
+
+    background:#233247;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:20px;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    background:#4fd1ff;
+
+    transition:.4s;
+
+}
+
+.step-text{
+
+    color:#94a3b8;
+
+    margin-bottom:25px;
+
+}
+
+.onboarding-card h1,
+.onboarding-card h2{
+
+    margin-bottom:20px;
+
+}
+
+.onboarding-card p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.step-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:30px;
+
+}
+
+.step-buttons button{
+
+    width:48%;
+
+}
+/* ===========================
+   Creating Twin
+=========================== */
+
+.creating-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:120px 20px;
+
+}
+
+.creating-card{
+
+    width:700px;
+
+    text-align:center;
+
+    padding:60px;
+
+}
+
+.dna-icon{
+
+    font-size:80px;
+
+    animation:rotateDNA 3s linear infinite;
+
+    margin-bottom:20px;
+
+}
+
+@keyframes rotateDNA{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.creating-card h1{
+
+    margin-bottom:20px;
+
+}
+
+.creating-card p{
+
+    margin:30px 0;
+
+    color:#cbd5e1;
+
+    font-size:18px;
+
+}
+
+.creating-card h2{
+
+    margin-top:20px;
+
+    color:#4fd1ff;
+
+}
+/* ===========================
+   Dashboard Cards
+=========================== */
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+}
+
+.stat-card{
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 35px rgba(79,209,255,.25);
+
+}
+
+.stat-icon{
+
+    font-size:40px;
+
+}
+
+.stat-content h4{
+
+    color:#94a3b8;
+
+    font-weight:500;
+
+    margin-bottom:8px;
+
+}
+
+.stat-content h2{
+
+    font-size:34px;
+
+}
+
+.stat-content span{
+
+    font-size:18px;
+
+    color:#4fd1ff;
+
+    margin-left:5px;
+
+}
+/* ===========================
+   Dashboard
+=========================== */
+
+.dashboard{
+
+    padding-top:130px;
+
+    padding-bottom:80px;
+
+}
+
+.dashboard h1{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.dashboard-subtitle{
+
+    color:#94a3b8;
+
+    margin-bottom:40px;
+
+}
+/* ===========================
+   Sidebar
+=========================== */
+
+.sidebar{
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:250px;
+
+    height:100vh;
+
+    background:#08111f;
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+    padding:30px 20px;
+
+}
+
+.sidebar-logo{
+
+    font-size:30px;
+
+    margin-bottom:50px;
+
+}
+
+.sidebar-logo span{
+
+    color:#4fd1ff;
+
+}
+
+.sidebar-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    margin-bottom:10px;
+
+    transition:.3s;
+
+}
+
+.sidebar-item:hover{
+
+    background:#132238;
+
+}
+
+.active-sidebar{
+
+    background:#4fd1ff22;
+
+    color:#4fd1ff;
+
+}
