@@ -1,4 +1,4 @@
-const BASE_URL = "https://healthtwin-ai-1.onrender.com";
+const BASE_URL = "https://healthtwin-ai-2-n8aw.onrender.com";
 
 // -------------------------------
 // Health Analysis
