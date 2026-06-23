@@ -20,7 +20,7 @@ app.add_middleware(
     allow_origins=[
       "http://localhost:5173",
         "https://healthtwin-ai-2.onrender.com",
-        "https://health-twin-ai-lime.vercel.app/chat",
+        "https://health-twin-ai-lime.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
