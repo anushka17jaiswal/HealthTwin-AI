@@ -1,168 +1,154 @@
 # 🩺 HealthTwin AI
 
-HealthTwin AI is an AI-powered personal health assistant that helps users monitor their health, receive personalized recommendations, analyze skin health, and interact with an intelligent health chatbot.
+> **Your AI-Powered Digital Health Companion**
 
-## 🚀 Features
-
-- 📊 BMI Calculator
-- ❤️ Health Score
-- 🔥 Daily Calorie Requirement
-- 💧 Water Intake Tracker
-- 🥩 Protein Goal Calculator
-- 😴 Sleep Analysis
-- 🩸 Menstrual Cycle Prediction
-- 🤖 AI Health Recommendations
-- 💬 Gemini AI Chatbot
-- 📷 AI Skin Analysis
-- 📈 Health Progress Dashboard
-- 📉 Weekly & Monthly Charts
-- 🎯 Health Simulator
+HealthTwin AI is an intelligent healthcare platform that creates a personalized digital health twin for every user. By combining Artificial Intelligence with health analytics, the application evaluates important health parameters such as BMI, calorie requirements, protein intake, hydration, sleep, and menstrual cycle tracking to generate personalized wellness insights. The platform also includes an AI-powered health chatbot for instant guidance and an AI skin analysis module that helps users understand their skin health through image-based analysis. Designed with a modern React frontend and a FastAPI backend, HealthTwin AI provides an interactive dashboard that transforms personal health data into meaningful recommendations, making preventive healthcare more accessible, engaging, and user-friendly.
 
 ---
 
-## 🛠 Tech Stack
+# ✨ Features
+
+- 🤖 AI Health Chatbot
+- 📊 BMI & Health Score Calculator
+- 💧 Water Intake Tracker
+- 😴 Sleep Analysis
+- 🔥 Daily Calorie Requirement
+- 🥩 Protein Goal Calculator
+- 👩 Menstrual Cycle Prediction
+- 🧴 AI Skin Analysis
+- 📈 Interactive Health Dashboard
+- 💡 Personalized AI Health Recommendations
+
+---
+
+# 🛠 Tech Stack
 
 ### Frontend
 - React.js
 - Vite
-- CSS
-- Chart.js
+- React Router
+- CSS3
 
 ### Backend
 - FastAPI
 - Python
-- Google Gemini API
-- OpenCV
-- MediaPipe
+
+### AI Integration
+- OpenRouter API
+- GPT OSS Model
+
+### Deployment
+- Vercel (Frontend)
+- Render (Backend)
 
 ---
 
-## 📂 Project Structure
+# 🌐 Live Demo
 
-```
-HealthTwin AI
+### 🚀 Frontend
+https://health-twin-ai-lime.vercel.app
+
+### ⚙️ Backend API
+https://healthtwin-ai-2-n8aw.onrender.com
+
+### 📖 API Documentation
+https://healthtwin-ai-2-n8aw.onrender.com/docs
+
+---
+
+# 📂 Project Structure
+
+```text
+HealthTwin-AI/
 │
-├── backend
+├── backend/
 │   ├── main.py
-│   ├── health_engine.py
 │   ├── chatbot.py
+│   ├── health_engine.py
 │   ├── skin_analysis.py
 │   ├── requirements.txt
 │   └── .env
 │
-├── src
-│   ├── pages
-│   ├── components
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── assets/
 │   ├── App.jsx
 │   └── main.jsx
 │
+├── public/
+├── package.json
+├── vite.config.js
 └── README.md
 ```
 
 ---
 
-## ⚙ Installation
+# 🚀 Deployment
 
-### Clone Repository
+HealthTwin AI is fully deployed using a modern cloud architecture. The frontend is hosted on **Vercel**, providing a fast, responsive, and globally accessible user interface, while the backend is deployed on **Render** using **FastAPI** to manage health analysis, AI chatbot responses, skin analysis, and REST APIs. The frontend and backend communicate securely through live API endpoints, allowing users to access all features directly from the browser without any local setup. The project demonstrates a complete end-to-end AI-powered full-stack application suitable for real-world healthcare assistance, hackathons, and portfolio showcases.
 
-```bash
-git clone <repository-url>
-```
+---
+# 📸 Application Screenshots
 
-### Backend
-
-```bash
-cd backend
-
-python -m venv venv
-
-source venv/bin/activate
-```
-
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Run Backend
-
-```bash
-uvicorn main:app --reload
-```
-
-Backend runs at
-
-```
-http://127.0.0.1:8000
-```
+## 🏠 Home Page
+![Home](assets/home.png)
 
 ---
 
-### Frontend
-
-```bash
-npm install
-
-npm run dev
-```
-
-Frontend runs at
-
-```
-http://localhost:5173
-```
+## 📝 AI Health Onboarding
+![Onboarding](assets/onboarding.png)
 
 ---
 
-## 🔑 Environment Variables
-
-Create a `.env` file inside the backend folder.
-
-```env
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-```
+## 📊 Health Dashboard
+![Dashboard](assets/dashboard.png)
 
 ---
 
-## 📷 AI Modules
-
-### Health Analysis
-- BMI
-- Health Score
-- Calories
-- Water Goal
-- Protein Goal
-- Period Prediction
-
-### AI Chatbot
-- Health Guidance
-- Fitness Advice
-- Nutrition Suggestions
-- Lifestyle Recommendations
-
-### Skin Analysis
-- Acne Detection
-- Pigmentation Detection
-- Dark Circle Analysis
-- Skin Tone Detection
-- Personalized Skincare Suggestions
+## 🤖 AI Health Chatbot
+![Chatbot](assets/chatbot.png)
 
 ---
 
-## 📈 Future Improvements
-
-- User Authentication
-- Cloud Database
-- Daily Health History
-- Smart Notifications
-- Wearable Device Integration
-- AI Disease Risk Prediction
+## 🧴 AI Skin Analysis
+![Skin Analysis](assets/skin-analysis.png)
 
 ---
 
-## 👩‍💻 Developed By
+## 🧴 AI Simulator
+![Simulator](assets/simulator.png)
+
+# 🔮 Future Enhancements
+
+- Smartwatch Integration
+- AI Nutrition Planner
+- PDF Health Report Generation
+- Medical History Timeline
+- Doctor Recommendation System
+- Health Progress Analytics
+- Multi-language Support
+
+---
+
+# 👩‍💻 Developer
 
 **Anushka Jaiswal**
 
-HealthTwin AI – An intelligent AI-powered healthcare assistant built using React, FastAPI, and Google Gemini AI.
+B.Tech Computer Science & Engineering  
+National Institute of Technology (NIT) Raipur
+
+GitHub: https://github.com/anushka17jaiswal
+
+---
+
+# ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+---
+
+## 💙 HealthTwin AI
+
+**"Empowering healthier lives through AI-driven personalized healthcare."**
