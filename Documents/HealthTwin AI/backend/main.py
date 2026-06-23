@@ -18,7 +18,8 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-      "https://healthtwin-ai-2.onrender.com"
+      "http://localhost:5173",
+        "https://healthtwin-ai-2.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
